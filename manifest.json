@@ -1,0 +1,29 @@
+{
+   "background": {
+      "scripts": [ "options.js", "bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "icon_dict_19.png",
+         "38": "icon_dict_38.png"
+      },
+      "default_popup": "options.html",
+      "default_title": "有道"
+   },
+   "content_scripts": [ {
+      "js": [ "lookup.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "支持Chrome浏览器的划词翻译",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "manifest_version": 2,
+   "name": "有道词典划词插件 v2 优化版",
+   "options_page": "options.html",
+   "permissions": [ "<all_urls>", "tabs" ],
+   "version": "2.0",
+   "web_accessible_resources": [ "ab20.png", "ydd-sprite.png", "logo.png" ]
+}
